@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Blog - About</title>
+    <link rel="stylesheet" href="/paper.min.css">
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <nav class="border split-nav" style="margin-top: 1em;">
+              <div class="collapsible">
+                <div class="collapsible-body">
+                  <ul class="inline">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/recipes.html">Recipes</a></li>
+                    <li><a href="/tips.html">Tips</a></li>
+                    <li><a href="/about.html">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <h1>Cooking Blog</h1>
+        <div style="position: relative;height: 32em;overflow: hidden;">
+            <img src="/img/1.png" alt="banner" class="no-border" style="width: 100%;position: absolute;top: -35px;">
+        </div>
+        <main>
+            <h2>About Us</h2>
+            <p>Learn more about the authors of this blog and their passion for cooking.</p>
+            <p>If you have any questions or comments, please reach out to us at: <a href="mailto:info@cookingblog.com">info@cookingblog.com</a> or use the form below</p>
+        </main>
+        <style>
+            input {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+        </style>
+        <section>
+            <form action="/submit-form.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Cooking Blog</p>
+        </footer>
+    </div>
+</body>
+</html>
